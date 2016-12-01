@@ -1,0 +1,10 @@
+dasom-kim;2013043144;Apple;3
+dasom-kim;2013043144;Apple;3
+dasom-kim;2013043144;Apple;3
+dasom-kim;2013043144;Apple;3
+dasom-kim;2013043144;Apple;3
+dasom-kim;2013043144;Orange;3
+Dasom kim;2013043144;Apple;3
+Dasom kim;2013043144;Apple;3
+Dasom kim;2013043144;Strawberry;3
+Dasom kim;2013043144;Melon;2
