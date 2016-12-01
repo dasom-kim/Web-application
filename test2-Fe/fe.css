@@ -1,0 +1,139 @@
+/* CSS & Page Layout - Final Exam Page
+ * CSS stylesheet를 완성하여 다음 웹 페이지를 생성하시오 (스크린샷은 Mac에서 Firefox로!)
+ * 
+ * CSS coding & Page Layout
+ * 지시에 따라 `fe.css'를 완성하여 위에서 보이는 것과 같이 `fe.html'를 style 및 layout하시오. 
+ * 만점을 받기 위해서는 다음 제약 조건을 무저건 만족해야 한다 :
+ *    * 'fe.html'을 수정하지 마시오. (참고: 'fe.html'는 유효한 HTML이 아님)
+ *    * 불필요한 style을 추가하지 마시오.
+ *    * absolute positioning을 사용하지 마시오. 
+ *    * 다음 사양 그리고 'fe.css'의 관련 주석에 맞추어 답안을 작성하시오.
+ *    * CSS를 알아보기 쉬운 형식으로 나타내고, 제대로 된 띄어쓰기를 하시오. 
+ */
+
+/* 1. General page style 전반적인 페이지 스타일 */
+/* 주어진 primeR.otf를 사용하여 사용자 지정 폰트 primeRegular을 만드시오. */
+
+font {
+	"primeRegular": url("font/primeR.otf");
+}
+
+body {
+	background-color: rgba(130, 220, 239, 0.5); /* rgba를 사용하여 웹 페이지의 배경색을 빨강 130, 초록 220, 파랑 239, 알파 0.5으로 설정하시오. */
+	font-size: 9pt;
+	font-family: "primeRegular", Tahoma, sans-serif; /* 웹 페이지의 text가 9pt 크기이고 primeRegular, Tahoma, sans-serif 폰트를 이 우선순위로 설정하시오. */
+	margin: none;
+	padding: none; /* 웹 페이지의 margin과 padding이 없음 */
+}
+
+/* 2. Top of the page - area with the image banner 페이지 최 상단 - 이미지 베너가 있는 부분 */
+#imgbanner {
+	text-align: center; /* imgbnr.png 이미지 베너를 이 부분의 중앙에 위치하도록 설정하시오 */
+	background-image: url("images/imgbnrbg.png"); 
+	background-repeat: repeat-x; /* 제공된 imgbnrbg.png가 가로로 페이지 끝까지 반복되며 이 섹션의 배경이 되도록 설정하시오 */
+}
+
+/* 3. Page heading 페이지 제목 */
+h1 {
+	text-align: center;
+	font-size: 30pt; 
+	color: #EB731E; /* 페이지 제목이 중앙에 위치하고 30pt, #EB731E 색이 되도록 설정하시오 */
+	font-family: Tahoma, sans-serif; /* 페이지 제목이 Tahoma 혹은 sans-serif 폰트를 이 우선순위로 사용하도록 설정하시오 */
+	text-shadow: 3px 3px #999999; /* 페이지 제목이 3px 우측하단으로 #999999 색의 그림자가 지도록 설정하시오 */
+}
+
+/* 4. Content area & 10. Extra Marks 내용 부분 & 추가 점수 */
+#content {
+	width: 820px;
+	 /* 내용 부분이 가로로 820px를 차지하며 페이지에 중앙정렬 되도록 설정하시오 - 페이지의 사이즈가 변해도 내용 부분은 가로로 중앙정렬 되도록 설정 */
+	border-radius: 25px;
+	border: 5px solid #004989;/* 내용 부분이 25px 둥근 코너를 가진 5px #004989 색의 실선 테두리를 가지도록 설정하시오 */	
+	overflow: hidden; /* 내용 부분이 둥근 코너 밖으로 나오지 않도록 설정하시오 */
+}
+
+/* 5. Info area (lefthand-side of the Content area) & 10. Extra Marks 정보 부분 (내용 부분의 왼쪽) & 추가 점수 */
+#info {
+	width: 270px;	 /* 정보 부분이 270px 만큼 넓도록 설정하시오 - 이 부분이 항상 팁과 코멘트 부분보다 세로로 크다고 가정 */
+}
+
+#info dl {
+	font-family: Helvetica, sans-serif; /* 정보 부분에 definition list가 : - Helvetica 혹은 sans-serif 폰트를 이 우선순위로 사용하도록 설정하시오 */
+	padding-right: 10px;
+	padding-left: 10px; /* 정보 부분 가장자리에서 왼쪽 오른쪽으로 10pt 공간이 있도록 설정하시오 */
+	...property( 10(c) )... /* definition list의 공간 설정을 적절히 하여 스크린 샷에 보이는 것 처럼 정보 부분과 Footer 부분사이에 공간이 없도록 설정하시오 */
+}
+
+#info dt {
+	font-weight: bold; 
+	margin-top: 12px;/* 각 definition term이 bold 폰트를 사용하며 세로로 위에 있는 element와 12px 공간이 있도록 설정하시오. */
+}
+
+#info li {
+    list-style-type: none;
+     /* 정보 부분 최 하단에 나오는 링크의 list가 글머리 및 띄어쓰기가 없이 보여지도록 설정하시오 */
+}
+
+/* 6. Footer area (bottom of the Content area) Footer 부분 (내용 부분의 하단)*/
+#info + p {
+	text-align: center; 
+	padding: 5px; 
+	margin: none; /* footer 부분의 text가 중앙 정렬되고, text와 바깥 가장자리와 5px의 공간이 있으며, 세로로 이웃인 element와 공간은 없도록 설정하시오 */
+}
+
+/* 7. Info & Fotter Area 정보 및 footer 부분 */
+#info, #info + p {
+	color: white; 
+	background-color: #03ACD9;/* 정보 부분 footer 부분 모두 흰색 text와 #03ACD9 배경색을 가지고 있도록 설정하시오 */
+}
+
+/* 8. Tips and Comments Area (rightthand-side of the Content area) 팁과 코멘트 부분 (내용 부분의 오른쪽)*/
+#tipncomment {
+	width: 550px; 
+	float: right;/* 팁과 코멘트 부분의 넓이가 550px이고 내용부분의 오른쪽에 오도록 설정하시오 */
+}
+
+#tctop {
+	 font-size: 20pt;
+	 color: white;
+	 background-color: #03ACD9; 
+	 padding: 10px;/* 팁과 코멘트 부분 상단에 20pt 흰색 text, #03ACD9 배경색, text와 바깥 가장자리 사이에 10px 공간이 있도록 설정하시오 */
+}
+
+.column {	
+	overflow: hidden; /* 팁과 코멘트 부분이 2 행으로 구성되도록 설정하시오 (CSS3의 다중 행 속성 사용 금지 )  */
+	width: 47%; 
+	margin: 2% 2%;/* 각 행이 팁과 코멘트 부분의 47% 넓이를 차지하고 행과 이웃 element 사이에 2%의 가로 공간이 있도록 설정하시오 */
+}
+
+.tiporcomment {
+	font-weight: bold;
+	color: #EB731E; 
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid #004989;
+	margin: 8px;/* 팁과 코멘트 부분이 bold #EB731E 색상의 text, 하얀 배경색, 7px 반지름의 둥근 코너를 가진 2px #004989 색상의 실선 테두리, 그리고 박스와 테두리 사이에 8px의 공간이 있도록 설정하시오 */
+}
+
+.tiporcomment img {
+	margin-right: 5px; /* 팁과 코멘트 부분의 모든 이미지가 오른쪽을 5px 공간이 있도록 설정하시오 */
+	...property( 8(g) )... /* 팁과 코멘트 부분의 text가 이웃 이미지를 wrapping하도록 설정하시오 */
+}
+
+.tiporcomment {
+	margin-bottom: 25pt; /* 팁과 코멘트 부분의 각 팁과 코멘트가 타 내용과 25pt의 세로 공간이 있도록 설정하시오 */
+}
+
+.affiliation {
+	font: italic; /* 팁과 코멘트 제공자의 소속은 italc으로 표기하도록 설정하시오 */
+}
+
+/* 9. Validation Links 유효성 검사 링크 */
+#validation {
+	position: fixed;/* 유효성 검사 링크 (이미지)가 스크롤을 하여도 페이지의 오른쪽 하단 코너에 고정되도록 설정하시오 */
+	opacity: 0.45; /* 유효성 검사 링크 (이미지)가 55% 불투명 (45%투명) 하도록 설정하시오 */
+}
+
+/* 10. Extra Marks */
+#info img {
+	margin: 10px; /* poster.jpg 이미지가 스크린 샷에서 보이는 것 처럼 정렬되도록 공간 설정을 하시오 */
+}
