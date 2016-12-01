@@ -1,0 +1,54 @@
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+	font-size: smaller;
+}
+
+fieldset {
+    float: left;
+}
+
+label {
+    display: block;
+}
+
+#potato {
+    position: relative;
+    width: 367px;
+    height: 428px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/body.png);
+    background-color: white;
+}
+
+#potato img {
+    position: absolute;
+}
+
+#potato_arms { top: 177px; left: 26px;}
+
+#potato_ears { top: 104px; left: 58px; }
+
+#potato_eyes { top: 126px; left: 132px; z-index: 4; }
+
+#potato_mouth { top: 233px; left: 119px; z-index: 4; }
+
+#potato_nose { top: 170px; left: 131px; z-index: 6; }
+
+#potato_eyebrows { top: 102px; left: 109px; z-index: 5;}
+
+#potato_glasses { top: 121px; left: 97px; z-index: 7;}
+            
+#potato_hat { top: 28px; left: 101px; z-index: 10;}
+
+#potato_moustache { top: 189px; left: 91px; z-index: 5;}
+
+#potato_shoes { top: 297px; left: 46px;}
+
+
+
+
