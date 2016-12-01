@@ -1,0 +1,39 @@
+#fruits {
+	width: 480px;
+	height: 100px;
+}
+
+#fruits img {
+	width: 70px;
+	height: 70px;
+	padding: 3px;
+}
+
+#basket {
+	width: 470px;
+	height: 110px;
+	border: 3px dashed gray;
+	text-align: center;
+}
+
+#basket img {
+	width: 70px;
+	height: 70px;
+	padding: 3px;
+	margin: 17px;
+}
+.apple {
+    background-color : red;
+}
+.banana {
+    background-color: yellow;
+}
+.orange {
+    background-color: orange;
+}
+.grape {
+    background-color: purple;
+}
+.kiwi {
+    background-color: green;
+}
