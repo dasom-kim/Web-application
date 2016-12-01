@@ -1,0 +1,331 @@
+body {
+	font-family: "Brown", "Verdana", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body > div {
+	margin: 0 auto;
+	max-width: 1024px;
+	margin-bottom: 10px;
+}
+
+body > header > div {
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+header {	
+	background-color: black;
+	color: white;
+	overflow: hidden;
+}
+
+#spans {
+	color: #ff6567;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	float: right;
+}
+
+header div div *:hover, header div *:not(#spans):hover {
+	color: #1cace2;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+header div div:not(#spans) {
+	float: left;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-right: 30px;
+}
+
+#brand {
+	padding-top: 32px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+#brand img {
+	width: 300px;
+	height: 62px;
+	float: left;
+}
+
+#brand div {
+	margin-top: 45px;
+	text-align: right;
+}
+
+#brand div a {
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav div {
+	float: left;
+	border-top: 1px solid #D9D9D8;
+	border-bottom: 1px solid #D9D9D8;
+	border-left: 1px solid #D9D9D8;
+}
+
+#search-wrap {
+	border-right: 1px solid #D9D9D8;
+}
+
+nav div:not(#search-wrap) {
+	margin-right: 2px;
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+	padding-right: 0.72em;
+	padding-left: 0.72em;
+}
+
+#search-wrap form * {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+nav div:not(#search-wrap):hover {
+	outline: 2px solid black;
+}
+
+#date {
+	background-color: black;
+	overflow: hidden;
+}
+
+#date p {
+	text-align: center;
+	color: white;
+}
+
+#date div div {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#date div div i {
+ 	text-align: center;
+	color: white;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	border-radius: 50%;
+	font-size: 1.25em;
+	float: left;
+}
+
+#date .fa-facebook {
+	background-color: #3B5998;
+}
+
+#date .fa-twitter {
+	background-color: #55ACEE;
+	margin-left: 0.25em;
+}
+
+aside {
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 300px;
+	float: right;
+}
+
+#chart {
+	background-color: #484647;
+	padding: 0.75em;
+}
+
+#chart span {
+	color: black;
+}
+
+.highlight {
+	height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border: 1px solid #989898;
+	overflow: hidden;
+}
+
+.highlight div:not(.title) {
+	float: left;
+}
+
+.title {
+	color: #989898;
+	padding: 1em;
+}
+
+
+.title + div {
+	width: 45px;
+	font-size: 2em;
+	margin-top: 6px;
+	text-align: center;
+}
+
+.title + div + div img {
+	width: 2.5em;
+	height: 2.5em;
+	margin: 6px;
+	float: left;
+}
+
+.title + div + div p {
+	width: 192px;
+	margin: 0px;
+}
+
+.title + div + div p span{
+	display: block;
+}
+
+.title + div + div p > span {
+	font-size: 1em;
+}
+
+.title + div + div p > span + span {
+	font-size: 12px;
+	color: #1CACE2;
+}
+
+.title + div + div + div {
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 2px solid white;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+article {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.mainchart {
+	height: 104px;
+	border-top: 1px solid #CDCDCD;
+	border-bottom: 1px solid white;
+	overflow: hidden;
+}
+
+.mainchart div:not(.title) {
+	float: left;
+}
+
+.arrow {
+	width: 34px;
+	line-height: 104px;
+	text-align: center;
+	color: #8C8E90;
+	background-color: rgb(231, 231, 231);
+}
+
+.fa-arrow-up {
+	color: #05C648;
+}
+
+.fa-arrow-down {
+	color: #F93C33;
+}
+
+.arrow + div {
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.arrow + div span {
+	display: block;
+}
+
+.arrow + div > span {
+	font-size: 62px;
+	text-align: center;
+
+}
+
+.arrow + div > span + span {
+	font-size: 12.4px;
+	color: #989898;
+	line-height: 1;
+}
+
+.arrow + div + div img {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+	width: 91px;
+	height: 91px;
+	float: left;
+}
+
+.arrow + div + div p {
+	width: 500px;
+	padding-top: 15px;
+	margin: 0px;
+}
+
+.arrow + div + div p span {
+	display: block;
+}
+
+.arrow + div + div p > span {
+	font-size: 24px;
+}
+
+.arrow + div + div p > span + span {
+	font-size: 16px;
+	color: #1CACE2;
+}
+
+.arrow + div + div + div {
+	text-align: center;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 2px solid black;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+footer {
+	background-color: black;
+	overflow: hidden;
+}
+
+footer img {
+	float: right;
+}
+
+.mainchart:hover {
+	border-color: black;
+}
+
+.arrow + div + div + div:hover {
+	color: #1CACE2;
+	cursor: pointer;
+}
+
+.arrow + div + div p > span + span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
